@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AboutVC-->
+        <scene sceneID="TTy-Gu-j89">
+            <objects>
+                <viewController storyboardIdentifier="AboutVC" id="qW0-9j-M1P" customClass="AboutVC" customModule="CoctailDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SUJ-go-eXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7Z-mS-k17">
+                                <rect key="frame" x="16" y="16" width="343" height="197.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Want make a little party and don't know, what drinks to serve? Here you can find any known drink! They all are separated by categories, all of them have information about ingredients, instructions and even kind of glass. You can save your favorite drinks and see them without internet connection</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSx-pC-BWu">
+                                <rect key="frame" x="72.5" y="229.5" width="230" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="don`t show again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uma-Ub-KRj">
+                                        <rect key="frame" x="73" y="11" width="149" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ddl-rA-JZK">
+                                        <rect key="frame" x="8" y="6" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ddl-rA-JZK" firstAttribute="top" secondItem="qSx-pC-BWu" secondAttribute="top" constant="6" id="3Y9-eA-T5T"/>
+                                    <constraint firstItem="Uma-Ub-KRj" firstAttribute="leading" secondItem="ddl-rA-JZK" secondAttribute="trailing" constant="16" id="EmJ-Nw-Rij"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uma-Ub-KRj" secondAttribute="trailing" constant="8" id="FNl-Tc-CY0"/>
+                                    <constraint firstItem="Uma-Ub-KRj" firstAttribute="centerY" secondItem="qSx-pC-BWu" secondAttribute="centerY" id="MTE-pA-gHM"/>
+                                    <constraint firstItem="ddl-rA-JZK" firstAttribute="leading" secondItem="qSx-pC-BWu" secondAttribute="leading" constant="8" id="d6B-eL-ZQW"/>
+                                    <constraint firstAttribute="bottom" secondItem="ddl-rA-JZK" secondAttribute="bottom" constant="8" id="f1g-uH-9rZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY2-xm-iv1">
+                                <rect key="frame" x="154" y="306.5" width="67" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDismissTapped:" destination="qW0-9j-M1P" eventType="touchUpInside" id="9Fu-Fu-7S2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qSx-pC-BWu" firstAttribute="top" secondItem="i7Z-mS-k17" secondAttribute="bottom" constant="16" id="1dV-pn-VlZ"/>
+                            <constraint firstItem="hlj-MX-V6y" firstAttribute="trailing" secondItem="i7Z-mS-k17" secondAttribute="trailing" constant="16" id="8K0-DY-vwU"/>
+                            <constraint firstItem="NY2-xm-iv1" firstAttribute="centerX" secondItem="hlj-MX-V6y" secondAttribute="centerX" id="C0i-Cf-YSN"/>
+                            <constraint firstItem="i7Z-mS-k17" firstAttribute="leading" secondItem="hlj-MX-V6y" secondAttribute="leading" constant="16" id="Cz7-PD-4f3"/>
+                            <constraint firstItem="qSx-pC-BWu" firstAttribute="centerX" secondItem="hlj-MX-V6y" secondAttribute="centerX" id="JAW-Xs-FXo"/>
+                            <constraint firstItem="NY2-xm-iv1" firstAttribute="top" secondItem="qSx-pC-BWu" secondAttribute="bottom" constant="32" id="iwB-eo-Fc4"/>
+                            <constraint firstItem="i7Z-mS-k17" firstAttribute="top" secondItem="hlj-MX-V6y" secondAttribute="top" constant="16" id="z9g-PQ-ruH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hlj-MX-V6y"/>
+                    </view>
+                    <connections>
+                        <outlet property="swCheck" destination="ddl-rA-JZK" id="rPm-OR-kM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uzh-F4-EDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="140.77961019490255"/>
+        </scene>
+    </scenes>
+</document>
